@@ -3,20 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>
-		JS
-	</title>
+	<title>Гормошка</title>
+	<style>
+		button{
+			border: none;
+			background-color: blue;
+			padding: 10px 15px;
+		}
+		.answ_wrapper > div{
+			padding: 5px 10px;
+			background-color: green;
+			color: white;
+			display: none;
+		}
+	</style>
 </head>
 <body>
-	<script type="text/javascript" src="script.js"></script>
-	<input id="number1">
-	<input id="number2">
-	<div class="buttons">	
-		<button id="plus" onclick="operation='+'">+</button>
-		<button id="minus" onclick="operation='-'">-</button>
-		<button id="times" onclick="operation='*'">*</button>
-		<button id="division" onclick="operation='/'">/</button>
+	<div class="wrapper">
+		<button class="question1" onclick="quest1()">Сколько весит земля?</button>
+		<button class="question2" onclick="quest2()">Первый закон аеродинамики?</button>
+		<button class="question3" onclick="quest3()">Первый закон Ньютона?</button>
 	</div>
-	<button onclick="result()">Result</button>
+	<div class="answ_wrapper">
+		<div id="answ1">
+			Земля́ — третья по удалённости от Солнца планета Солнечной системы. Самая плотная, пятая по диаметру и массе среди всех планет Солнечной системы и крупнейшая среди планет земной группы, в которую входят также Меркурий, Венера и Марс
+		</div>
+		<div id="answ2">
+			В аэродинамике принимается, что характеристики сил взаимодействия любого тела и воздуха (газа) будут одинаковы в обоих случаях: когда тело движется в неподвижном воздухе, или когда на неподвижное тело набегает равномерный поток воздуха.
+		</div>
+		<div id="answ3">
+			Инерция (она же инертность) — свойство тела сохранять скорость своего движения неизменной по величине и направлению, когда не действуют никакие силы, а также свойство тела сопротивляться изменению его скорости.
+		</div>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>
